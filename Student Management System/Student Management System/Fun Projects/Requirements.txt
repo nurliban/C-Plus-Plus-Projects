@@ -1,0 +1,70 @@
+**Student Management System - Requirements Document**
+
+**1. Introduction**
+The Student Management System (SMS) is designed to streamline student enrollment, course registration, and academic record management. This system will enable administrators, 
+faculty, and students to efficiently manage academic data and processes.
+
+**2. Objectives**
+- Provide a centralized system for managing student records.
+- Facilitate course enrollment and schedule management.
+- Enable secure access to student data for administrators, faculty, and students.
+- Generate academic reports and transcripts.
+
+**3. System Features**
+
+**3.1 User Roles and Access Control**
+- **Administrator**: Manages student records, course details, and faculty assignments.
+- **Faculty**: Views student lists, assigns grades, and manages course content.
+- **Student**: Enrolls in courses, views grades, and accesses academic history.
+
+**3.2 Student Enrollment & Record Management**
+- Add, update, and delete student records.
+- Store student personal details (Name, DOB, Address, Contact Info, etc.).
+- Maintain unique student ID for identification.
+
+**3.3 Course Management**
+- Add, update, and delete courses.
+- Assign faculty members to courses.
+- Manage course schedules, prerequisites, and credits.
+
+**3.4 Enrollment & Registration**
+- Allow students to register for courses.
+- Implement restrictions based on prerequisites and seat availability.
+- Provide a waitlist feature for full courses.
+
+**3.5 Grade Management**
+- Faculty can input and update student grades.
+- Students can view grades securely.
+- Automatic GPA and transcript generation.
+
+**3.6 Reports & Analytics**
+- Generate student performance reports.
+- Provide faculty with attendance and grading reports.
+- Export student records in various formats (TXT, CSV, etc.).
+
+**3.7 Authentication & Security**
+- Implement role-based access control (RBAC).
+- Secure login with encryption.
+- Data backup and recovery features.
+
+**4. Technical Requirements**
+- **Language**: C++ (Console-based implementation).
+- **Data Storage**: File-based storage using text files, binary files, or SQLite.
+- **User Interface**: Command-line menu-driven interface.
+- **Authentication**: Simple username/password system stored securely.
+- **Error Handling**: Robust error checking for invalid inputs and file handling.
+
+**5. Performance Requirements**
+- Should support concurrent users via file locking or session-based access.
+- Data retrieval should be optimized using indexed files or efficient searching techniques.
+- System should handle large student datasets efficiently.
+
+**6. Compliance & Data Protection**
+- Ensure compliance with **FERPA** or **GDPR** for student data privacy.
+- Encrypt sensitive student records.
+- Implement role-based access to prevent unauthorized modifications.
+
+**7. Future Enhancements**
+- GUI version using a library like Qt or ncurses.
+- Cloud-based storage integration for remote access.
+- AI-based recommendation system for course selection.
